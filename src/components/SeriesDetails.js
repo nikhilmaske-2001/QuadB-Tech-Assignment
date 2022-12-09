@@ -36,8 +36,10 @@ const SeriesDetails = () => {
     })
 
     const handleClick = (e) => {
-        e.preventDefault()
-        console.log(data)
+        localStorage.setItem("data", JSON.stringify(data));
+        // sets the value of "message" to be "saved in browser storage"
+
+        console.log(localStorage.getItem("data"));
     }
 
     return (
