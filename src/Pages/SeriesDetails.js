@@ -7,8 +7,9 @@ const SeriesDetails = () => {
     const [name, setName] = useState("");
     const [summary, setSummary] = useState("");
     const [image, setImage] = useState();
-    const [score, setScore] = useState(0);
+    const [rate, setRate] = useState(0);
     const [language, setLanguage] = useState("");
+    const [genres, setGenres] = useState([]);
 
 
     useEffect(() => {
@@ -25,7 +26,8 @@ const SeriesDetails = () => {
             setSummary(series.show.summary.replace(/<[^>]+>/g, ''));
             setLanguage(series.show.language);
             setImage(series.show.image.original);
-            setScore(series.show.rating.average);
+            setRate(series.show.rating.average);
+            setGenres(series.show.genres);
         }
 
         fetchData();
@@ -57,7 +59,7 @@ const SeriesDetails = () => {
                                 <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 text-red-500" viewBox="0 0 24 24">
                                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
                                 </svg>
-                                <span className="text-gray-600 ml-3">{score} Rating</span>
+                                <span className="text-gray-600 ml-3">{rate ? rate : "No"} Rating</span>
                             </span>
                             <span className="flex ml-3 pl-3 py-2 border-l-2 border-gray-200">
                                 <a className="text-gray-500">
@@ -78,6 +80,19 @@ const SeriesDetails = () => {
                             </span>
                         </div>
                         <p className="leading-relaxed">{summary}</p>
+                        <br></br>
+                        <div className='mb-4 flex gap-x-2 text-sm'>
+                            <div className='bg-violet-500 rounded-full text-white px-3 py-2'>
+                                Genres
+                            </div>
+                            {genres.map((category) => {
+                                return (
+                                    <div className='bg-green-500 rounded-full text-white px-3 py-2'>
+                                        {category}
+                                    </div>
+                                )
+                            })}
+                        </div>
                         <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-200 mb-5">
                         </div>
                         <div className="flex">
