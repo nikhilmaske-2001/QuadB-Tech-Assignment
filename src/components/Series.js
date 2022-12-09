@@ -23,7 +23,7 @@ const Series = ({ series }) => {
                 {language}
             </div>
             <Link to={`/series/${series.show.id}`} >
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                     View Details
                 </button>
             </Link>

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
-import Series from './Series';
+import Series from '../components/Series';
 
 const Home = () => {
     const [data, setData] = useState([]);
