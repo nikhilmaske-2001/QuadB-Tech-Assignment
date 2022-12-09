@@ -27,6 +27,10 @@ const SeriesDetails = () => {
         fetchData();
     })
 
+    const handleClick = () => {
+        console.log("Submit");
+    }
+
     return (
         <section class="text-gray-700 body-font overflow-hidden bg-white">
             <div class="container px-5 py-24 mx-auto">
@@ -101,7 +105,7 @@ const SeriesDetails = () => {
                             <span class="title-font font-medium text-2xl text-gray-900">$58.00</span>
                             {/* <button class="flex ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">Book a seat</button> */}
                             <button type="button"
-                                class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                                class=" flex ml-auto px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                                 data-bs-toggle="modal" data-bs-target="#exampleModalScrollable">
                                 Book a seat
                             </button>
@@ -114,16 +118,44 @@ const SeriesDetails = () => {
                                         <div
                                             class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
                                             <h5 class="text-xl font-medium leading-normal text-gray-800" id="exampleModalScrollableLabel">
-                                                Modal title
+                                                Book a Seat
                                             </h5>
                                             <button type="button"
                                                 class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
                                                 data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body relative p-4">
-                                            <p>This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content will be cropped and scrollable within the modal.</p>
-
-                                            <p>This content should appear at the bottom after you scroll.</p>
+                                            <form class="w-full max-w-lg">
+                                                <div class="flex flex-wrap -mx-3 mb-6">
+                                                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                                                            First Name
+                                                        </label>
+                                                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane" />
+                                                        <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+                                                    </div>
+                                                    <div class="w-full md:w-1/2 px-3">
+                                                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                                                            Last Name
+                                                        </label>
+                                                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe" />
+                                                    </div>
+                                                </div>
+                                                <div class="flex flex-wrap -mx-3 mb-2">
+                                                    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                                                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+                                                            City
+                                                        </label>
+                                                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="Albuquerque" />
+                                                    </div>
+                                                    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                                                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
+                                                            Zip
+                                                        </label>
+                                                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-zip" type="text" placeholder="90210" />
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                         <div
                                             class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
@@ -132,9 +164,9 @@ const SeriesDetails = () => {
                                                 data-bs-dismiss="modal">
                                                 Close
                                             </button>
-                                            <button type="button"
+                                            <button type="button" onClick={handleClick}
                                                 class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out ml-1">
-                                                Save changes
+                                                Submit
                                             </button>
                                         </div>
                                     </div>
