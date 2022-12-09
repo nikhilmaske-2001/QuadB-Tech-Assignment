@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 const Series = ({ series }) => {
-    const { score, show } = series;
+    const { show } = series;
     const { name, type, language, image, rating } = show;
 
     return (
