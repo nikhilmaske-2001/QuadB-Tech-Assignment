@@ -1,7 +1,7 @@
 import './App.css';
 import Home from './components/Home';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Series from './components/Series';
+import SeriesDetails from './components/SeriesDetails';
 
 function App() {
   return (
@@ -9,11 +9,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}></Route >
-          <Route path="/series" element={<Series />}>
-          </Route>
+          <Route path="/series/:id" element={<SeriesDetails />}></Route >
         </Routes>
       </BrowserRouter>
-    </div>
+    </div >
   );
 }
 
