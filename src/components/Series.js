@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Series = ({ series }) => {
     const { score, show } = series;
@@ -21,6 +22,11 @@ const Series = ({ series }) => {
             <div className='text-lg font-semibold max-w-[260px]'>
                 {language}
             </div>
+            <Link to={`/series/${series.show.id}`} >
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    View Details
+                </button>
+            </Link>
 
         </div >
     )

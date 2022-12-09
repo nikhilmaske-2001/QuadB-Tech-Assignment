@@ -20,14 +20,12 @@ const Home = () => {
                 <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-14'>
                     {data.map((series, index) => {
                         return (
-                            <Link to={`/series/${series.show.id}`} key={index} >
-                                <Series series={series} />
-                            </Link>
+                            <Series series={series} key={index} />
                         )
                     })}
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 
