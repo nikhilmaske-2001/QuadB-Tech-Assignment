@@ -103,7 +103,7 @@ const SeriesDetails = () => {
                                 data-bs-toggle="modal" data-bs-target="#exampleModalScrollable">
                                 Book a seat
                             </button>
-                            <Modal />
+                            <Modal name={name} language={language} />
                         </div>
                     </div>
                 </div>

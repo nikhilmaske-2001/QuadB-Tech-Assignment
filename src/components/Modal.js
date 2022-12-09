@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Model = () => {
+const Model = ({ name, language }) => {
     const [data, setData] = useState({});
 
 
@@ -35,7 +35,16 @@ const Model = () => {
                     </div>
                     <div className="modal-body relative p-4">
                         <form className="w-full max-w-lg">
+                            <div className="w-full md:w-1/2 px-3 mb-2 md:mb-0">
+                                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
+                                    Series Name: {name}
+                                </label>
+                                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
+                                    Language: {language}
+                                </label>
+                            </div>
                             <div className="flex flex-wrap -mx-3 mb-6">
+
                                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                                     <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
                                         First Name
@@ -79,8 +88,8 @@ const Model = () => {
                         </button>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div >
+        </div >
     )
 }
 
