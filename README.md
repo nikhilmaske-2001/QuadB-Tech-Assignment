@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+# QuadB Tech Assignment
+It is a web app which shows the series data in a beautiful UI. Complete web app has mobile/desktop friendly responsive UI.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Technologies Used:
+* ReactJS
+* Tailwind CSS (For UI, UX)
+* Netlify (for deployment)
 
-## Available Scripts
+# ScreenShots:
+HomePage [Desktop] <img width="260" alt="image" src="https://user-images.githubusercontent.com/59444243/206724391-522c4c80-d43a-4c9b-bea3-9b29135aa45d.png">
+HomePage [Mobile] <img width="137" alt="image" src="https://user-images.githubusercontent.com/59444243/206724568-9b37d754-d2f7-42a5-a0d3-eaad973a3696.png">
+HomePage [Tablet] <img width="272" alt="image" src="https://user-images.githubusercontent.com/59444243/206724667-534d18e3-dad7-4757-88d7-0c31144b7b7e.png">
 
-In the project directory, you can run:
+Details Page [Desktop] <img width="730" alt="image" src="https://user-images.githubusercontent.com/59444243/206724923-f97e10b3-ae1f-435d-85d8-3686809b8cb9.png">
+Details Page [Mobile] <img width="137" alt="image" src="https://user-images.githubusercontent.com/59444243/206724812-5b21e0fb-5135-45c8-9435-f4905f87e54b.png">
+Details Page [Tablet] <img width="295" alt="image" src="https://user-images.githubusercontent.com/59444243/206725263-acb20fbd-49a9-4fe1-a192-5f0449ef66bd.png">
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Modal [Desktop] <img width="758" alt="image" src="https://user-images.githubusercontent.com/59444243/206725476-914d2ea4-1415-4ec3-8044-00fde133b28e.png">
+Modal [Mobile] <img width="143" alt="image" src="https://user-images.githubusercontent.com/59444243/206725398-eea55967-1590-4921-8d2e-3be5d993b202.png">
